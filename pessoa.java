@@ -6,14 +6,14 @@ public class Pessoa {
     private String nome;
     private String cpf;
     private String email;
-    private ArrayList<String> telefones;
+    private ArrayList<Telefone> telefones;
     private String endereco;
 
     public Pessoa(String nome, String cpf, String email, ArrayList<String> telefones, String endereco) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
-        this.telefones = telefones;
+        this.telefones = new ArrayList<>();
         this.endereco = endereco;
     }
 
@@ -41,11 +41,11 @@ public class Pessoa {
         this.email = email;
     }
 
-    public ArrayList<String> getTelefones() {
+    public ArrayList<Telefone> getTelefones() {
         return telefones;
     }
 
-    public void setTelefones(ArrayList<String> telefones) {
+    public void setTelefones(ArrayList<Telefone> telefones) {
         this.telefones = telefones;
     }
 
